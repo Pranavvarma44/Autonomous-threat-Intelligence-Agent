@@ -150,13 +150,13 @@ def train_ner_model(csv_path="data/processed/cve_dataset.csv"):
 
     training_args = TrainingArguments(
         output_dir=str(OUTPUT_DIR),
-        per_device_train_batch_size=training_config["per_device_train_batch_size"],
-        num_train_epochs=1,
+        per_device_train_batch_size=8,
+        num_train_epochs=3,
         logging_steps=100,
         report_to="none",
         save_strategy="epoch",
         save_total_limit=2,
-        learning_rate=2e-5,
+        learning_rate=3e-5,
         weight_decay=0.01,
         warmup_steps=warmup_steps,
         dataloader_num_workers=min(4, os.cpu_count() or 1),
