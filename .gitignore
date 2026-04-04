@@ -1,0 +1,6 @@
+data/
+logs/
+results/
+.DS_Store
+.venv
+models/

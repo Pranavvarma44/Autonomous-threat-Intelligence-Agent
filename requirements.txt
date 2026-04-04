@@ -1,0 +1,8 @@
+# Verified in the local Python 3.12 virtual environment.
+torch==2.11.0
+transformers==5.5.0
+datasets==4.8.4
+accelerate==1.13.0
+pandas==3.0.2
+scikit-learn==1.8.0
+seqeval==1.2.2
